@@ -1,0 +1,129 @@
+body{
+    background: rgba(209, 217, 255, 0.47);
+    margin: 0;
+	padding: 0;
+    display: table;
+}
+#left{
+    float: left;
+    width:60%;
+    background: linear-gradient(180deg, #19fec4 0%, #4bff72 50%, #4bff0a 100%);
+    text-align: center;
+}
+#left img{
+    width: 100%;
+    max-height: 450px;
+}
+#right{
+    float: right;
+    width:40%;
+    text-align: center;
+}
+.form_reg input{
+    border-radius: 5px;
+}
+#index_email{
+    margin-top: 300px;
+    border-color: rgba(4, 6, 3, 0.21);
+}
+#index_password{
+    margin-top: 5px;
+    border-color: rgba(4, 6, 3, 0.21);
+}
+#index_email input, #index_password input{
+    width: 250px;
+    height: 25px;
+    border-radius: 3px;
+    padding: 2px 0 2px 5px;
+}
+#index_email input[type=text]:focus, #index_password input[type=password]:focus{
+    outline-color: #4d1a76;
+}
+.form_reg a{
+    font-size: 100%;
+}
+#id_enter, #id_reg{
+    width: 260px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+#id_enter{
+    background-color: white;
+    border-color: rgba(149, 95, 101, 0.27);
+}
+#id_reg{
+    background-color: #352aff;
+    color: #ffffff;
+    border-color: #080eb3;
+}
+#id_enter:hover{
+    background-color: #33fff2;
+    border-color: #26a5f5;
+}
+#id_reg:hover{
+    background-color: #33fff2;
+    color: #000000;
+    border-color: #26a5f5;
+}
+a{
+    text-decoration: none;
+    color: #636363;
+}
+#refer_reg:hover{
+    text-decoration: underline;
+}
+
+
+#reg_forms{
+    width: 400px;
+    margin: 120px 0 0 450px;
+    text-align: center;
+}
+.tags input{
+    width: 250px;
+    padding: 6px 0 5px 6px;
+    border-radius: 5px;
+}
+.tags input[type=text]:focus, .tags input[type=password]:focus, .tags input[type=tel]:focus, .tags input[type=date]:focus{
+    outline-color: #4d1a76;
+    border-radius: 2px;
+}
+
+.tags input[type=date]{
+    margin-bottom: 15px;
+}
+.pol ul li{
+    list-style-type: none;
+}
+.pol ul li input{
+    margin-right: 3px;
+}
+.pol ul li:first-child{
+    float: left;
+    padding-left: 60px;
+}
+.pol ul li:last-child{
+    float: right;
+    list-style-type: none;
+    padding-right: 120px;
+}
+.submit{
+    margin-top: 50px;
+}
+.submit input{
+    width: 260px;
+    padding: 5px 0 5px 5px;
+    border-radius: 20px;
+    background-color: #352aff;
+    color: white;
+    outline-color: #4d1a76;
+    border-color: #080eb3;
+}
+.submit input:hover{
+    border-radius: 15px;
+    background-color: #33fff2;
+    color: black;
+    outline-color: #4d1a76;
+    border-color: #26a5f5;
+}

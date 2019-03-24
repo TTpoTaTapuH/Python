@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'welcome/styles.css' %}"/>
+</head>
+<body>
+<div id="reg_content">
+    <div id="reg_forms">
+        <form method="POST">
+        {% csrf_token %}
+            <div class="tags">
+                <p>{{ form.name }}{% if form.name.errors %}{{ form.name.errors }}{% endif %}</p>
+                <p>{{ form.surname }}{% if form.surname.errors %}{{ form.surname.errors }}{% endif %}</p>
+                <p>{{ form.email }}{% if form.email.errors %}{{ form.email.errors }}{% endif %}</p>
+                <p>{{ form.password }}{% if form.password.errors %}{{ form.password.errors }}{% endif %}</p>
+                <input type="date" name="date_birthday"/><br/>
+                <input type="tel" name="telephone" pattern="7[0-9]{10}" placeholder="Телефон"/>
+            </div>
+                <div class="pol"><p>{{ form.gender }}{% if form.gender.errors %}{{ form.gender.errors }}{% endif %}</p></div>
+            <div class="submit"><a href="#"><input type="submit" value="Зарегистрироваться"/></a></div>
+        </form>
+    </div>
+</div>
+    <footer>
+        <p>It's footer</p>
+    </footer>
+</body>
+</html>

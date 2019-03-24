@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добро пожаловать</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'welcome/styles.css' %}"/>
+</head>
+<body>
+<div>
+    <div id="left">
+        <h1>Привет</h1>
+        <p>Добро пожаловать к нам</p>
+        <p>Присоединяйся</p>
+        <p>Найди новых друзей</p>
+        <p>Знакомься</p>
+        <img src="{% static "welcome/images/welcome.jpg" %}" alt="Фотография сайта"/>
+    </div>
+    <div id="right">
+        <div class="form_reg">
+            <form method="POST">
+        {% csrf_token %}
+                <!--{% for lines in form %}
+                <p>{{ lines }}{% if lines.errors %}{{ lines.errors }}{% endif %}</p>
+                {% endfor %}-->
+                <p id="index_email">{{ form.email }}{% if form.email.errors %}{{ form.email.errors }}{% endif %}</p>
+                <p id="index_password">{{ form.password }}{% if form.password.errors %}{{ form.password.errors }}{% endif %}</p>
+                <a id="refer_reg" href="#">Забыли пароль?</a><br/>
+                <input id="id_enter" type="submit" value="Войти">
+                <a href="registration/"><br/>
+                    <input id="id_reg" type="button" value="Регистрация"/>
+                </a>
+        </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
